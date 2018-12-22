@@ -21,7 +21,7 @@ Vagrant.configure("2") do |config|
   #run some shell commands to bring this machine up to scratch
   config.vm.provision "shell", inline: <<-SHELL
     apt-get update && apt-get upgrade -y
-  #  apt-get install -y 
+    apt-get install gnome-shell -y
   SHELL
 
 end
